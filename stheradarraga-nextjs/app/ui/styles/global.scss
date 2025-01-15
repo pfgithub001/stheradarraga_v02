@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'colors';
+
+//components
+@import 'components/landing';
+@import 'components/floating_menu';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white-01;
+  margin: 0;
+}
+
+.myViewPort {
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+}
+button {
+  color: $white-01;
+  background: $blue-01;
+  border-radius: 5px;
+  padding: 5;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
